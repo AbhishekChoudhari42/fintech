@@ -37,7 +37,7 @@ const Header = () => {
               alt="Logo"
               width="40"
               height="40"
-              className="w-[180px]"
+              className="w-[180px] max-sm:w-[140px] mt-2"
             />
           </div>
 
@@ -58,7 +58,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-md text-gray-700 hover:text-blue-600 focus:outline-none"
+              className="p-2 rounded-md text-white hover:text-blue-500 focus:outline-none"
               aria-label={isOpen ? 'Close menu' : 'Open menu'}
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}

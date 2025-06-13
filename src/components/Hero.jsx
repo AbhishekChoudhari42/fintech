@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import image2 from '../assets/hero2.png';
+import image2 from '../assets/hero2.webp';
 import image1 from '../assets/hero1.png';
-import image3 from '../assets/hero3.png';
-import image4 from '../assets/hero4.png';
+import image3 from '../assets/hero3.webp';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -29,21 +28,27 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 2000); // Switch every 2 seconds
+    }, 5000); // Switch every 5 seconds
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, [slides.length]);
 
   const slideVariants = {
-    enter: { opacity: 0, x: 0 },
-    center: { opacity: 1, x: 0 },
-    exit: { opacity: 0, x: 0 },
+    enter: { opacity: 0 },
+    center: { opacity: 1 },
+    exit: { opacity: 0 },
   };
 
   const textVariants = {
-    enter: { opacity: 0, y: 5 },
+    enter: { opacity: 0, y: 10 },
     center: { opacity: 1, y: 0 },
-    exit: { opacity: 0, y: -5 },
+    exit: { opacity: 0, y: -10 },
+  };
+
+  const subTextVariants = {
+    enter: { opacity: 0, y: 15 },
+    center: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: -10 },
   };
 
   return (
@@ -59,14 +64,14 @@ const Hero = () => {
           animate="center"
           exit="exit"
           transition={{ duration: 0.5,ease:'easeInOut' }}
-        />
+          />
       </AnimatePresence>
 
       {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/30" />
+      <div className="absolute inset-0 bg-black/50" />
 
       {/* Text and Button Container */}
-      <div className="relative z-10 flex flex-col items-start w-[90%] justify-center mx-auto px-4 sm:px-6 lg:px-8 text-left">
+      <div className="relative z-10 flex flex-col items-start w-[90%]  justify-center mx-auto px-4  sm:px-6 lg:px-8 text-left">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentSlide}
@@ -75,14 +80,21 @@ const Hero = () => {
             animate="center"
             exit="exit"
             transition={{ duration: 0.5 }}
-            className="mb-8 border-1 w-full"
-          >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
+            className="mb-12  w-full lg:h-[220px] "
+            >
+            <h1 className="text-6xl max-sm:text-4xl max-md:text-5xl font-semibold text-white mb-6">
               {slides[currentSlide].heroText}
             </h1>
-            <p className="text-[0.6rem] sm:text-sm md:text-md text-white max-w-1/2">
+            <motion.p 
+            transition={{ duration: 0.5,ease:'easeInOut',delay:0.2 }}
+            variants={subTextVariants}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            
+            className="text-lg text-white max-w-[60%] max-sm:text-sm max-sm:max-w-[100%]">
               {slides[currentSlide].subText}
-            </p>
+            </motion.p>
           </motion.div>
         </AnimatePresence>
 

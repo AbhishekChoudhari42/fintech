@@ -1,7 +1,7 @@
 import { FaCheckCircle } from "react-icons/fa";
 import image1 from '../assets/hero1.png';
-import image2 from '../assets/hero2.png';
-import image3 from '../assets/hero3.png';
+import image2 from '../assets/hero2.webp';
+import image3 from '../assets/hero3.webp';
 const sections = [
   {
     title: "Proprietary Trading",
