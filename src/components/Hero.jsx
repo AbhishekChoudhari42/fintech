@@ -52,7 +52,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-full h-screen max-h-[800px] flex items-center justify-center overflow-hidden">
+    <section className="relative w-full h-[600px] max-h-[800px] flex items-center justify-center overflow-hidden">
       <AnimatePresence>
         <motion.img
           key={currentSlide}
