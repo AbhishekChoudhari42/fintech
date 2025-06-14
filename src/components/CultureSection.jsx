@@ -28,7 +28,7 @@ export default function CultureSection() {
         <div className="max-w-3xl mx-auto mb-12 text-center">
           <div className="w-full flex flex-col items-center">
           <SectionHeading text={"Culture & Philosophy"}/>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 mt-8">
             We value what you know and celebrate how you learn.
           </h2>
           </div>
