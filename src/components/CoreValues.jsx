@@ -43,7 +43,7 @@ const CoreValues = () => {
               className={`w-full pl-2 flex flex-col items-start space-y-4 ${index > 0 ? ' md:border-l-[1px] md:border-l-gray-200' :''}`}
             >
               <div className=" w-full text-white p-2 flex items-start gap-4">
-                <div className='bg-blue-600 w-[40px] h-[40px] p-2 flex items-center justify-center rounded-md'>
+                <div className='bg-blue-500 w-[40px] h-[40px] p-2 flex items-center justify-center rounded-md'>
                   <img src={value.icon} className='w-[30px]' alt="" />
                 </div>
                 
