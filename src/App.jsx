@@ -15,11 +15,11 @@ import TradingSections from './components/TradingSections'
 function App() {
 
   return (
-    <div className='w-screen flex justify-center overflow-hidden'>
+    <div className='w-full  flex justify-center p-0 m-0 overflow-hidden'>
       <div className='w-full m-0 p-0 max-w-[1440px]'>
         <Header />
         <Hero />
-        <div className='flex flex-col gap-4 p-8 px-24 max-sm:px-4 bg-white'>
+        <div id='who_we_are' className='flex flex-col gap-4 p-8 px-24 max-sm:px-4 bg-white'>
           <div className='w-full' >
             <SectionHeading text={'Who We Are'} />
             <h2 className='text-4xl font-semibold mt-2'>Our story started with a simple idea</h2>
@@ -27,7 +27,7 @@ function App() {
           <AccordionWithImage />
         </div>
         <div className='flex flex-col gap-4 items-center  bg-white'>
-          <div className='w-4/5 p-4 flex gap-14 max-sm:flex-col max-sm:w-full items-center max-sm:h-fit max-sm:gap-4 h-[100px]' >
+          <div id='what_we_do' className='w-4/5 p-4 flex gap-14 max-sm:flex-col max-sm:w-full items-start max-sm:h-fit max-sm:gap-4 h-[100px]' >
             <div className='h-200px flex-1'>
               <SectionHeading text={'What we do'} />
               <h2 className='text-3xl font-semibold mt-2'>We offer a wide range of services</h2>
@@ -36,8 +36,9 @@ function App() {
           </div>
         <TradingSections />
         </div>
-        <CoreValues />
         <FeatureGridSection />
+        <span id='core_values'></span>
+        <CoreValues />
         <CultureSection />
         <FoundersSection />
         <Footer />

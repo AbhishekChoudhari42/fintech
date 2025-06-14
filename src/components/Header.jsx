@@ -27,9 +27,9 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed w-full h-[94px] top-0 left-[50%] translate-x-[-51%] z-50 flex justify-between items-center">
-      <nav className="w-full px-6 sm:px-6 lg:px-8">
-        <div className="flex justify-between w-full items-center h-16">
+    <header className="fixed w-full h-[94px] top-0 left-[50%] max-w-[1440px] translate-x-[-50%] z-50 flex justify-between items-center">
+      <nav className="w-full max-w-[1440px] px-6 sm:px-6 lg:px-8">
+        <div className="flex justify-between w-full max-w-[1440px] items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <img

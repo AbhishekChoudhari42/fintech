@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import image2 from '../assets/hero2.webp';
-import image1 from '../assets/hero1.png';
+import image1 from '../assets/hero1.webp';
 import image3 from '../assets/hero3.webp';
 
 const Hero = () => {
@@ -52,13 +52,13 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-full h-[600px] max-h-[800px] flex items-center justify-center overflow-hidden">
+    <section className="relative w-full h-[90vh] max-h-[800px] flex items-center justify-center overflow-hidden">
       <AnimatePresence>
         <motion.img
           key={currentSlide}
           src={slides[currentSlide].image}
           alt={`Slide ${currentSlide + 1}`}
-          className="absolute w-screen h-screen object-cover"
+          className="absolute w-screen h-full object-cover"
           variants={slideVariants}
           initial="enter"
           animate="center"
@@ -80,7 +80,7 @@ const Hero = () => {
             animate="center"
             exit="exit"
             transition={{ duration: 0.5 }}
-            className="mb-12  w-full lg:h-[220px] "
+            className="mb-12  w-full h-[200px] mt-16"
             >
             <h1 className="text-6xl max-sm:text-4xl max-md:text-5xl font-semibold text-white mb-6">
               {slides[currentSlide].heroText}
@@ -106,6 +106,7 @@ const Hero = () => {
          <p className='bg-blue-600 text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors duration-200'>Discover our services.</p> 
         </a>
       </div>
+
     </section>
   );
 };
