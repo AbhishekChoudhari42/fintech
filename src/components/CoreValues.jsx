@@ -30,10 +30,10 @@ const values = [
 const CoreValues = () => {
   return (
     <section className="py-12 px-4 md:px-8 bg-white">
-      <div className="max-w-8xl mx-auto flex flex-col items-center">
+      <div className="max-w-8xl mx-auto flex flex-col ">
         <SectionHeading text={"Our Core Values"} />
-        <h1 className="text-3xl font-semibold mb-4 mt-4 text-center">We strive to deliver value to our clients</h1>
-        <p className="text-gray-600 mb-8 w-2/3 text-center">
+        <h1 className="text-3xl font-semibold mb-4 ">We strive to deliver value to our clients</h1>
+        <p className="text-gray-600 mb-8 w-2/3 ">
           We put these values to work in our systems, strategy, and people practices. These are the filters through which every decision passes.
         </p>
         <div className="w-full  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
@@ -48,7 +48,7 @@ const CoreValues = () => {
                 </div>
                 
                 <div className='w-8/9'>
-                  <h3 className="text-gray-800 text-sm font-semibold">{value.title}</h3>
+                  <h3 className="text-gray-800 text-lg font-semibold mb-1">{value.title}</h3>
                   <p className="text-gray-600 text-sm font-medium">{value.description}</p>
                 </div>
               </div>

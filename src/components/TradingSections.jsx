@@ -17,7 +17,7 @@ const sections = [
       "We combine cutting-edge algorithms with real-time market data and aim to consistently generate alpha and stay ahead of the curve.",
       "Every second matters. The edge is missing if your systems are slow or your models are rigid, that's why we invest heavily in research and in the underlying tech that allows our strategies to execute without friction.",
       "We deploy our own capital with conviction and discipline. Our strategies span equities, derivatives, forex, and crypto, and are powered by algorithms that are constantly learning, adapting, and responding.",
-      "We use our own capital to run high-conviction trading strategies in:",
+      "We use our own capital to run high-conviction trading strategies in -",
     ],
     tags: ["Stocks", "Derivatives", "Cryptocurrency", "Commodities", "Forex"],
     image: image1,
@@ -74,20 +74,23 @@ const sections = [
 
 export default function TradingSections() {
   return (
-    <section className="bg-white px-4 py-12 space-y-24">
+    <section className="bg-white py-12 space-y-16 w-full">
       {sections.map((section, idx) => (
         <div
           key={idx}
-          className={`flex flex-col md:flex-row ${
+          className={`flex h-fit  flex-col md:flex-row ${
             section.imageLeft ? "md:flex-row" : "md:flex-row-reverse"
-          } items-start gap-8 max-w-6xl mx-auto`}
+          } items-start gap-8 px-8 mx-auto`} 
         >
           {/* Image */}
+          <div className="h-[400px] min-h-full w-1/2 p-0">
+
           <img
             src={section.image}
             alt={section.title}
-            className="h-full mt-1 md:w-1/2 rounded-xl shadow-lg object-cover"
-          />
+            className="h-full w-full rounded-xl  object-cover"
+            />
+            </div>
 
           {/* Text */}
           <div className="w-full md:w-1/2 space-y-4">
@@ -95,7 +98,7 @@ export default function TradingSections() {
               {section.title}
             </h3>
             {section.text.map((t, i) => (
-              <p key={i} className="text-gray-600 text-sm md:text-base">
+              <p key={i} className="text-gray-600 text-sm md:text-base text-justify">
                 {t}
               </p>
             ))}
@@ -106,10 +109,10 @@ export default function TradingSections() {
                 {section.tags.map((tag, i) => (
                   <div
                     key={i}
-                    className="  px-3 py-1 rounded-full text-sm font-medium flex items-center"
+                    className="py-1 rounded-full text-sm font-medium flex items-center gap-2"
                   >
                     <img src={tick} className="w-4 mr-2" alt="" />
-                    <p>
+                    <p className="text-justify">
                     {tag}
                     </p>
                   </div>
@@ -123,7 +126,7 @@ export default function TradingSections() {
                 {section.bullets.map((point, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm">
                     <img src={point.img} className="w-5" alt="" />
-                    <p className="text-gray-700">{point.text}</p>
+                    <p className="text-gray-700 text-justify">{point.text}</p>
                   </li>
                 ))}
               </ul>

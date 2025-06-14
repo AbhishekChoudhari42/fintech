@@ -31,7 +31,7 @@ export default function AccordionWithImage() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 h-[300px] max-sm:h-fit w-full max-w-6xl mx-auto border-[1px] border-gray-100 my-4 max-sm:flex max-sm:flex-col-reverse">
+    <div className="grid grid-cols-1 sm:grid-cols-2 h-[300px] max-sm:h-fit w-full  mx-auto border-[1px] border-gray-100 my-4 max-sm:flex max-sm:flex-col-reverse">
       {/* Left: Accordion */}
       <div className="flex flex-col overflow-hidden">
         {data.map((item, index) => {

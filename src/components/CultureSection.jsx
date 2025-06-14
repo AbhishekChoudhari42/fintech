@@ -1,22 +1,23 @@
 import SectionHeading from "./SectionHeading";
-
+import culture1 from '../assets/culture1.webp'
+import culture2 from '../assets/culture2.webp'
 export default function CultureSection() {
     const values = [
       {
         title: "Joyful",
-        image: "/images/joyful.jpg",
+        image: culture1,
         description:
           "Begin by filling out the brief form, giving the details we need to start crafting the project.",
       },
       {
         title: "Humble",
-        image: "/images/humble.jpg",
+        image:culture1,
         description:
           "Begin by filling out the brief form, giving the details we need to start crafting the project.",
       },
       {
         title: "Inclusive",
-        image: "/images/inclusive.jpg",
+        image: culture1,
         description:
           "Begin by filling out the brief form, giving the details we need to start crafting the project.",
       },
