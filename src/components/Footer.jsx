@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
-
+import logo from '../assets/Liquilogic.svg'
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-8 px-4 md:px-8">
@@ -10,8 +10,7 @@ const Footer = () => {
               <div className="flex items-center mb-2">
                 {/* Placeholder for Logo */}
                 <div className="text-2xl font-bold">
-                  <span className="text-cyan-400">[Logo Part 1]</span>
-                  <span className="text-teal-400">[Logo Part 2]</span>
+                  <img src={logo} className='w-[120px]' alt="" />
                 </div>
               </div>
               <p className="text-sm text-gray-400">Future-ready Smart Trading Platform</p>

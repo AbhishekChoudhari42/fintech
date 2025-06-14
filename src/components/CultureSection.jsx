@@ -1,3 +1,5 @@
+import SectionHeading from "./SectionHeading";
+
 export default function CultureSection() {
     const values = [
       {
@@ -23,14 +25,13 @@ export default function CultureSection() {
     return (
       <section className="bg-white px-4 py-16 text-center">
         {/* Section Header */}
-        <div className="max-w-3xl mx-auto mb-12">
-          <p className="text-sm font-medium text-blue-600 uppercase mb-2">
-            <span className="inline-block w-6 h-[2px] bg-blue-600 align-middle mr-2" />
-            Culture & Philosophy
-          </p>
+        <div className="max-w-3xl mx-auto mb-12 text-center">
+          <div className="w-full flex flex-col items-center">
+          <SectionHeading text={"Culture & Philosophy"}/>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             We value what you know and celebrate how you learn.
           </h2>
+          </div>
           <p className="text-gray-600 text-base">
             We're a small team with big dreams. We're humble in the face of the market,
             but confident in our systems. Volatility doesn’t scare us—it sharpens us.

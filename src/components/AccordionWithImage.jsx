@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaHome } from "react-icons/fa";
-import image1 from '../assets/hero1.png';
+import image1 from '../assets/hero1.webp';
 import image2 from '../assets/hero2.webp';
 import image3 from '../assets/hero3.webp';
 
