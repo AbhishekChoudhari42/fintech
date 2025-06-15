@@ -38,7 +38,7 @@ export default function SectionHeading({ text }) {
           hidden: { opacity: 0, x: -10 },
           visible: { opacity: 1, x: 0 },
         }}
-        transition={{ delay: 0.1, duration: 0.2, ease: "easeOut" }}
+        transition={{ delay: 0.5, duration: 0.2, ease: "easeOut" }}
       >
         {text}
       </motion.h2>

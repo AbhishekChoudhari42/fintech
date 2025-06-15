@@ -7,7 +7,7 @@ import heart from '../assets/icons/Heart.png'
 const values = [
   {
     title: "Trust",
-    description: "Our most valuable asset is trust — earned through performance.",
+    description: "Our most valuable asset is trust earned through performance.",
     icon: lock
   },
   {
@@ -17,7 +17,7 @@ const values = [
   },
   {
     title: "Integrity",
-    description: "We do the right thing — always, not just when it’s noticed.",
+    description: "We do the right thing always, not just when it’s noticed.",
     icon: protected_tick
   },
   {
@@ -40,15 +40,15 @@ const CoreValues = () => {
           {values.map((value, index) => (
             <div
               key={index}
-              className={`w-full pl-2 flex flex-col items-start space-y-4 ${index > 0 ? ' md:border-l-[1px] md:border-l-gray-200' :''}`}
+              className={`w-full flex flex-col items-start space-y-4 pr-2 ${index > 0 ? ' md:border-l-[1px] md:border-l-gray-200 pl-2' :''}`}
             >
-              <div className=" w-full text-white p-2 flex items-start gap-4">
+              <div className=" w-full text-white flex items-start gap-4">
                 <div className='bg-blue-500 w-[40px] h-[40px] p-2 flex items-center justify-center rounded-md'>
                   <img src={value.icon} className='w-[30px]' alt="" />
                 </div>
                 
                 <div className='w-8/9'>
-                  <h3 className="text-gray-800 text-lg font-semibold">{value.title}</h3>
+                  <h3 className="text-gray-800 text-lg font-semibold mt-[-6px]">{value.title}</h3>
                   <p className="text-gray-600 text-sm font-medium">{value.description}</p>
                 </div>
               </div>

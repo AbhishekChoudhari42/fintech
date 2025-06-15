@@ -1,28 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import logo from '../assets/Liquilogic.svg';
-
+import logo from '../assets/Liquilogic.svg'
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
-  const [isScrollingUp, setIsScrollingUp] = useState(true);
-
-  useEffect(() => {
-    let lastScrollY = window.scrollY;
-
-    const handleScroll = () => {
-      const currentY = window.scrollY;
-
-      setIsScrollingUp(currentY < lastScrollY || currentY < 10); // visible when scrolling up or near top
-      setScrollY(currentY);
-
-      lastScrollY = currentY;
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const navLinks = [
     { name: 'Who We Are', href: '#who_we_are' },
@@ -36,25 +17,19 @@ const Header = () => {
     closed: {
       opacity: 0,
       height: 0,
-      transition: { duration: 0.4, ease: 'easeInOut' },
+      transition: { duration: 0.5, ease: 'easeInOut' },
     },
     open: {
       opacity: 1,
       height: 'auto',
-      transition: { duration: 0.4, ease: 'easeInOut' },
+      transition: { duration: 0.5, ease: 'easeInOut' },
     },
   };
 
   return (
-    <header
-      className={`
-        fixed top-0 left-1/2 z-50 w-full max-w-[1440px] translate-x-[-50%] transition-all duration-300
-        ${scrollY > 0 ? 'bg-white shadow-md' : 'bg-transparent'}
-        ${isScrollingUp ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'}
-      `}
-    >
-      <nav className="w-full px-6 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-[94px]">
+    <header className="fixed w-full h-[94px] top-0 left-[50%] max-w-[1440px] translate-x-[-50%] z-50 flex justify-between items-center ">
+      <nav className="w-full max-w-[1440px] px-6 sm:px-6 lg:px-8">
+        <div className="flex justify-between w-full max-w-[1440px] items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <img
@@ -72,9 +47,11 @@ const Header = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="hover:text-blue-400 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                className=" hover:text-blue-300 px-3 py-2 text-[14px] font-medium transition-colors duration-200 "
               >
-                <p className="text-blue-500">{link.name}</p>
+                <p className='text-blue-400'>
+                {link.name}
+                </p>
               </a>
             ))}
           </div>
@@ -83,7 +60,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-md text-blue-500 hover:text-blue-600 focus:outline-none"
+              className="p-2 rounded-md text-white hover:text-blue-500 focus:outline-none"
               aria-label={isOpen ? 'Close menu' : 'Open menu'}
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -99,7 +76,7 @@ const Header = () => {
               initial="closed"
               animate="open"
               exit="closed"
-              className="md:hidden absolute right-4 mt-2 w-48 bg-white rounded-lg shadow-lg overflow-hidden"
+              className="md:hidden absolute right-4 w-48 bg-white rounded-lg shadow-lg overflow-hidden"
             >
               <div className="px-2 py-2 space-y-1">
                 {navLinks.map((link) => (
