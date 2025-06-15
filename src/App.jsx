@@ -1,5 +1,6 @@
 import './App.css'
 import AccordionWithImage from './components/AccordionWithImage'
+import BuildAndEarn from './components/BuildAndEarn'
 import Carousel from './components/Carousel'
 import CoreValues from './components/CoreValues'
 import CultureSection from './components/CultureSection'
@@ -36,6 +37,18 @@ function App() {
             <p className='text-sm text-gray-600 flex-1 h-fit my-4 text-justify'>At LiquiLogic, we harness technology, data, and human insight to deliver consistent value with trust and integrity at the core. Finance has evolved from instinct to algorithms, from manual to real-time. Our infrastructure is built for speed, precision, and adaptability across complex markets.</p>
           </div>
           <TradingSections />
+        </div>
+        <div>
+          <div className='w-full px-8 max-sm:px-4'>
+            <div id='build_and_earn' className='w-full  gap-8 max-sm:flex-col max-sm:w-full items-start max-sm:h-fit max-sm:gap-4 ' >
+              <div className='h-200px flex-1'>
+                <SectionHeading text={'Build and Earn'} />
+                <h2 className='text-3xl font-semibold'>We offer a wide range of services</h2>
+              </div>
+              <p className='text-sm text-gray-600 flex-1 h-fit my-4 text-justify'>At LiquiLogic, we harness technology, data, and human insight to deliver consistent value with trust and integrity at the core. Finance has evolved from instinct to algorithms, from manual to real-time. Our infrastructure is built for speed, precision, and adaptability across complex markets.</p>
+            </div>
+            <BuildAndEarn />
+          </div>
         </div>
         <span id='core_values'></span>
         <div className='px-8 max-sm:px-4 w-full mb-12'>
