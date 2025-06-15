@@ -1,6 +1,7 @@
 import SectionHeading from "./SectionHeading";
 import culture1 from '../assets/culture1.webp'
 import culture2 from '../assets/culture2.webp'
+import Carousel from "./Carousel";
 export default function CultureSection() {
     const values = [
       {
@@ -24,12 +25,12 @@ export default function CultureSection() {
     ];
   
     return (
-      <section className="bg-white px-4 py-16 text-center">
+      <section className="bg-white px-8 py-4 text-left">
         {/* Section Header */}
-        <div className="max-w-3xl mx-auto mb-12 text-center">
-          <div className="w-full flex flex-col items-center">
+        <div className="mx-auto mb-6  text-left">
+          <div className="w-full flex flex-col items-left">
           <SectionHeading text={"Culture & Philosophy"}/>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 mt-8">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-2">
             We value what you know and celebrate how you learn.
           </h2>
           </div>
@@ -42,19 +43,7 @@ export default function CultureSection() {
         </div>
   
         {/* Values Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {values.map((value, idx) => (
-            <div key={idx} className="text-left">
-              <img
-                src={value.image}
-                alt={value.title}
-                className="w-full h-64 object-cover rounded-lg mb-4 shadow-md"
-              />
-              <h4 className="text-lg font-semibold mb-1">{value.title}</h4>
-              <p className="text-gray-500 text-sm">{value.description}</p>
-            </div>
-          ))}
-        </div>
+        <Carousel/>
       </section>
     );
   }

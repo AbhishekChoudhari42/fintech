@@ -66,7 +66,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto overflow-hidden rounded-b-md">
+    <div className="relative w-full mx-auto overflow-hidden ">
       <div className="relative h-96">
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
@@ -81,7 +81,7 @@ const Carousel = () => {
             <img
               src={slides[currentIndex].image}
               alt={slides[currentIndex].title}
-              className="w-full h-full object-cover rounded-md"
+              className="w-full h-full object-cover"
             />
             <div className="absolute bottom-8 left-8 text-white">
               <h2 className="text-3xl font-bold mb-2">{slides[currentIndex].title}</h2>
@@ -100,9 +100,9 @@ const Carousel = () => {
       </button>
       <button
         onClick={handleNext}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 p-3 rounded-full hover:bg-white transition"
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/80 p-3 rounded-full hover:bg-black transition"
       >
-        <FaArrowRight className="text-gray-800" />
+        <FaArrowRight className="text-white" />
       </button>
 
       {/* Dots Navigation */}

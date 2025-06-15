@@ -61,7 +61,7 @@ export default function AccordionWithImage() {
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                     className="px-4  text-sm text-gray-700 overflow-hidden"
                   >
-                    <div className={`overflow-auto max-sm:text-xs text-sm pr-1 ${index == activeIndex ? 'bg-white':''}`}>
+                    <div className={`overflow-auto max-sm:text-xs text-sm pr-1 text-justify ${index == activeIndex ? 'bg-white':''}`}>
                       {item.content}
                     </div>
                   </motion.div>

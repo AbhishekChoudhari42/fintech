@@ -1,3 +1,5 @@
+import SectionHeading from "./SectionHeading";
+
 export default function FoundersSection() {
     const founders = [
       {
@@ -15,13 +17,10 @@ export default function FoundersSection() {
     ];
   
     return (
-      <section className="bg-white px-4 py-16 text-center">
+      <section className="bg-white px-8  py-16 w-full">
         {/* Section Header */}
-        <div className="max-w-2xl mx-auto mb-12">
-          <p className="text-sm font-medium text-blue-600 uppercase mb-2">
-            <span className="inline-block w-6 h-[2px] bg-blue-600 align-middle mr-2" />
-            Our team
-          </p>
+        <div className="w-full mx-auto mb-12">
+         <SectionHeading text={'Our Team'}/>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet our Founders</h2>
           <p className="text-gray-600 text-base">
             With leadership experience at global giants like Amazon, Microsoft, and IBM, our
@@ -37,7 +36,7 @@ export default function FoundersSection() {
               <img
                 src={f.image}
                 alt={f.name}
-                className="w-40 h-40 rounded-xl object-cover mb-4 shadow-md"
+                className="w-60 h-60 rounded-xl object-cover mb-4 shadow-md"
               />
               <h3 className="text-xl font-semibold">{f.name}</h3>
               <p className="text-blue-600 font-medium text-sm">{f.role}</p>
