@@ -11,7 +11,7 @@ import goal from '../assets/icons/Goal.png'
 import bulb from '../assets/icons/Bulb.png'
 import database from '../assets/icons/Database.png'
 import automated from '../assets/icons/Automated.png'
-
+import { LuHouse } from "react-icons/lu";
 const sections = [
   {
     title: "Proprietary Trading",

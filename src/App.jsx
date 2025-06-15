@@ -28,12 +28,12 @@ function App() {
           <AccordionWithImage />
         </div>
         <div className='flex flex-col gap-4 items-center px-8 max-sm:px-4'>
-          <div id='what_we_do' className='w-full flex gap-8 max-sm:flex-col max-sm:w-full items-start max-sm:h-fit max-sm:gap-4 ' >
+          <div id='what_we_do' className='w-full  gap-8 max-sm:flex-col max-sm:w-full items-start max-sm:h-fit max-sm:gap-4 ' >
             <div className='h-200px flex-1'>
               <SectionHeading text={'What we do'} />
               <h2 className='text-3xl font-semibold'>We offer a wide range of services</h2>
             </div>
-            <p className='text-sm text-gray-600 flex-1 h-fit'>At LiquiLogic, we harness technology, data, and human insight to deliver consistent value with trust and integrity at the core. Finance has evolved from instinct to algorithms, from manual to real-time. Our infrastructure is built for speed, precision, and adaptability across complex markets.</p>
+            <p className='text-sm text-gray-600 flex-1 h-fit my-4 text-justify'>At LiquiLogic, we harness technology, data, and human insight to deliver consistent value with trust and integrity at the core. Finance has evolved from instinct to algorithms, from manual to real-time. Our infrastructure is built for speed, precision, and adaptability across complex markets.</p>
           </div>
           <TradingSections />
         </div>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaHome } from "react-icons/fa";
+import { LuHouse } from "react-icons/lu";
 import image1 from '../assets/hero1.webp';
 import image2 from '../assets/hero2.webp';
 import image3 from '../assets/hero3.webp';
@@ -16,13 +16,13 @@ const data = [
   {
     title: "Title 2",
     content:
-      "Title 2 description goes here. Replace with real content. Shown only when selected.",
+      "Our founders believe that the financial markets can be a force for individual and collective growth. Leadership, for us, is defined by how deeply one engages with a problem. Every assignment, every trade, every decision is an opportunity to practice that ethos.",
     image: image2,
   },
   {
     title: "Title 3",
     content:
-      "This is Title 3 content. You can add real text or components as needed.",
+      "We're building an institution that stands the test of time, like those before us—IBM, Tata, HSBC, John Deere—because our foundation is built on what’s profitable today and what’s meaningful tomorrow. Contentment and fulfilment are part of the outcome.",
     image: image3,
   },
 ];
@@ -46,7 +46,7 @@ export default function AccordionWithImage() {
                 onClick={() => setActiveIndex(index)}
                 className={`flex items-center gap-3 px-4 h-[60px] bg-gray-50  w-full font-semibold text-left text-gray-600 ${index == activeIndex ? 'bg-white':''}`}
               >
-                <FaHome className="text-blue-500" />
+                <LuHouse className="text-white bg-blue-500 w-[24px] h-[24px] p-[5px] rounded-[5px]"  size={14} />
                 {item.title}
               </button>
 
@@ -61,7 +61,7 @@ export default function AccordionWithImage() {
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                     className="px-4  text-sm text-gray-700 overflow-hidden "
                   >
-                    <div className={`overflow-auto max-sm:text-xs text-sm pr-1 text-justify ${index == activeIndex ? 'bg-white':''}`}>
+                    <div className={`overflow-auto max-sm:text-sm text-sm pr-1 text-justify ${index == activeIndex ? 'bg-white':''}`}>
                       {item.content}
                     </div>
                   </motion.div>
@@ -73,7 +73,7 @@ export default function AccordionWithImage() {
       </div>
 
       {/* Right: Image */}
-      <div className="h-full overflow-hidden  pl-2">
+      <div className="h-full overflow-hidden  md:pl-2 max-sm:mb-4">
         <motion.img
           key={data[activeIndex].image}
           src={data[activeIndex].image}

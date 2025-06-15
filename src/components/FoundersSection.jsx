@@ -4,13 +4,13 @@ export default function FoundersSection() {
     const founders = [
       {
         name: "Madhu Matangi",
-        role: "CEO & Co-Founder",
+        role: "Co-Founder & CEO",
         previous: "Former Amazon, Microsoft",
         image: "/images/madhu.jpg",
       },
       {
         name: "Sarah Johnson",
-        role: "CTO & Co-Founder",
+        role: "Co-Founder & CTO",
         previous: "Former Amazon, Microsoft",
         image: "/images/sarah.jpg",
       },
@@ -46,8 +46,8 @@ export default function FoundersSection() {
         </div>
   
         {/* Quote */}
-        <div className="mt-10 max-w-3xl mx-auto text-center italic text-sm text-gray-700 px-4">
-          “The purpose of wealth is not accumulation, but transformation. Whether it’s through markets or mentorship, the goal is the same—touch as many lives as possible.”
+        <div className="mt-10 max-w-3xl mx-auto text-center italic text-md text-gray-700 px-4 font-semibold">
+          “The purpose of wealth is not accumulation, but transformation. Whether it's through markets or mentorship, the goal is the same touch as many lives as possible.”
         </div>
       </section>
     );
