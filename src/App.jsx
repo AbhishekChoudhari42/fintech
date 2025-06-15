@@ -27,7 +27,7 @@ function App() {
           </div>
           <AccordionWithImage />
         </div>
-        <div className='flex flex-col gap-4 items-center px-8 max-sm:px-4'>
+        <div className='flex flex-col gap-4 items-center px-8 max-sm:px-4 mb-12'>
           <div id='what_we_do' className='w-full  gap-8 max-sm:flex-col max-sm:w-full items-start max-sm:h-fit max-sm:gap-4 ' >
             <div className='h-200px flex-1'>
               <SectionHeading text={'What we do'} />
@@ -38,7 +38,7 @@ function App() {
           <TradingSections />
         </div>
         <span id='core_values'></span>
-        <div className='px-8 max-sm:px-4 w-full'>
+        <div className='px-8 max-sm:px-4 w-full mb-12'>
           <CoreValues />
           <CultureSection />
           <FoundersSection />

@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { LuHouse } from "react-icons/lu";
-import image1 from '../assets/hero1.webp';
-import image2 from '../assets/hero2.webp';
-import image3 from '../assets/hero3.webp';
+import image1 from '../assets/accordion1.webp';
+import image2 from '../assets/accordion2.webp';
+import image3 from '../assets/accordion3.webp';
 
 
 const data = [

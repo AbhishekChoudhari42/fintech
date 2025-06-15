@@ -1,18 +1,19 @@
 import SectionHeading from "./SectionHeading";
-
+import founder1 from '../assets/founder1.png'
+import founder2 from '../assets/founder2.png'
 export default function FoundersSection() {
     const founders = [
       {
         name: "Madhu Matangi",
         role: "Co-Founder & CEO",
         previous: "Former Amazon, Microsoft",
-        image: "/images/madhu.jpg",
+        image: founder1,
       },
       {
         name: "Sarah Johnson",
         role: "Co-Founder & CTO",
         previous: "Former Amazon, Microsoft",
-        image: "/images/sarah.jpg",
+        image: founder2,
       },
     ];
   
@@ -21,7 +22,7 @@ export default function FoundersSection() {
         {/* Section Header */}
         <div className="w-full mx-auto mb-12">
          <SectionHeading text={'Our Team'}/>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet our Founders</h2>
+          <h2 className="text-3xl md:text-3xl font-semibold mb-4">Meet our Founders</h2>
           <p className="text-gray-600 text-base">
             With leadership experience at global giants like Amazon, Microsoft, and IBM, our
             founders bring a unique blend of customer-centricity, tech-led problem solving,

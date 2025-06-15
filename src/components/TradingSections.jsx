@@ -2,9 +2,9 @@
 
 import { motion } from "framer-motion";
 import { FaCheckCircle } from "react-icons/fa";
-import image1 from '../assets/hero1.webp';
-import image2 from '../assets/hero2.webp';
-import image3 from '../assets/hero3.webp';
+import image1 from '../assets/trading1.webp';
+import image2 from '../assets/trading2.png';
+import image3 from '../assets/trading3.webp';
 import tick from '../assets/icons/Tick.png'
 import bank from '../assets/icons/Bank.png'
 import goal from '../assets/icons/Goal.png'

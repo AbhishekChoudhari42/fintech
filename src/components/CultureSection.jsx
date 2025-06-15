@@ -1,6 +1,7 @@
 import SectionHeading from "./SectionHeading";
-import culture1 from '../assets/culture1.webp'
-import culture2 from '../assets/culture2.webp'
+import culture1 from '../assets/culture1.png'
+import culture2 from '../assets/culture2.png'
+import culture3 from '../assets/culture3.png'
 import Carousel from "./Carousel";
 export default function CultureSection() {
     const values = [
@@ -12,20 +13,20 @@ export default function CultureSection() {
       },
       {
         title: "Humble",
-        image:culture1,
+        image:culture2,
         description:
           "Begin by filling out the brief form, giving the details we need to start crafting the project.",
       },
       {
         title: "Inclusive",
-        image: culture1,
+        image: culture3,
         description:
           "Begin by filling out the brief form, giving the details we need to start crafting the project.",
       },
     ];
   
     return (
-      <section className="bg-white py-4 text-left">
+      <section className="bg-white py-4 text-left ">
         {/* Section Header */}
         <div className="mx-auto mb-6  text-left">
           <div className="w-full flex flex-col items-left">

@@ -1,23 +1,23 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import image1 from '../assets/hero1.webp';
-import image2 from '../assets/hero2.webp';
-import image3 from '../assets/hero3.webp';
+import culture1 from '../assets/culture1.png'
+import culture2 from '../assets/culture2.png'
+import culture3 from '../assets/culture3.png'
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 const slides = [
   {
-    image: image1,
+    image: culture1,
     title: "Inclusive",
     subtitle: "Begin by filling out the brief form, giving the details we need to start crafting the project."
   },
   {
-    image: image2,
+    image: culture2,
     title: "Creative",
     subtitle: "We bring unique perspectives to your vision, transforming ideas into impactful solutions."
   },
   {
-    image: image3,
+    image: culture3,
     title: "Reliable",
     subtitle: "You can count on us to deliver quality results on time, every time."
   }
@@ -103,9 +103,9 @@ const Carousel = () => {
               className="w-full h-full object-cover pointer-events-none"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/60 text-white">
-              <div className="absolute bottom-0 left-0 max-sm:translate-y-[-50%] px-2 ">
-                <h2 className="text-5xl max-sm:text-2xl font-bold">{slide.title}</h2>
-                <p className="text-sm max-sm:text-md max-w-md text-left">{slide.subtitle}</p>
+              <div className="absolute bottom-0 left-0 max-sm:translate-y-[-50%] px-2 md:p-8 ">
+                <h2 className="md:text-6xl max-sm:text-2xl font-bold">{slide.title}</h2>
+                <p className="md:text-lg max-sm:text-md max-w-md text-left">{slide.subtitle}</p>
               </div>
             </div>
           </div>
