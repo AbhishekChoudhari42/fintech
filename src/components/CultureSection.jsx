@@ -25,7 +25,7 @@ export default function CultureSection() {
     ];
   
     return (
-      <section className="bg-white px-8 py-4 text-left">
+      <section className="bg-white py-4 text-left">
         {/* Section Header */}
         <div className="mx-auto mb-6  text-left">
           <div className="w-full flex flex-col items-left">

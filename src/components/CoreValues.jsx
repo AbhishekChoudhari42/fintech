@@ -29,18 +29,18 @@ const values = [
 
 const CoreValues = () => {
   return (
-    <section className="py-8 px-4 md:px-8 bg-white">
+    <section className="py-8  bg-white">
       <div className="max-w-8xl mx-auto flex flex-col ">
         <SectionHeading text={"Our Core Values"} />
         <h1 className="text-3xl font-semibold mb-4 ">We strive to deliver value to our clients</h1>
-        <p className="text-gray-600 mb-8 w-2/3 ">
+        <p className="text-gray-600 mb-8 w-2/3 text-justify max-sm:w-full">
           We put these values to work in our systems, strategy, and people practices. These are the filters through which every decision passes.
         </p>
-        <div className="w-full  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="w-full gap-y-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {values.map((value, index) => (
             <div
               key={index}
-              className={`w-full flex flex-col items-start space-y-4 pr-2 ${index > 0 ? ' md:border-l-[1px] md:border-l-gray-200 pl-2' :''}`}
+              className={`w-full flex flex-col items-start space-y-4 pr-2 ${index > 0 ? ' md:border-l-[1px] md:border-l-gray-200 md:pl-2' :''}`}
             >
               <div className=" w-full text-white flex items-start gap-4">
                 <div className='bg-blue-500 w-[40px] h-[40px] p-2 flex items-center justify-center rounded-md'>

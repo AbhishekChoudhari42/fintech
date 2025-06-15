@@ -4,8 +4,8 @@ import logo from '../assets/Liquilogic.svg'
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-8 px-4 md:px-8">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between gap-8">
+    <footer className="bg-gray-900 text-white py-8">
+      <div className="max-w-7xl mx-auto flex flex-col  px-8 md:flex-row md:justify-between gap-8">
         
         {/* Left Section: Logo + Social + Contact */}
         <div className="flex-1 space-y-6">

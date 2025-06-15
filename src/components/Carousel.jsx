@@ -128,11 +128,11 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-full h-[500px] overflow-hidden">
+    <div className="relative w-full h-[500px] max-sm:h-[400px] overflow-hidden rounded-md" >
       {/* Slides */}
       <div
         ref={carouselRef}
-        className="flex cursor-grab select-none gap-x-0.5"
+        className="flex cursor-grab select-none"
         style={{
           transform: `translateX(calc(-${currentSlide * 100}% + ${dragOffset}%))`,
           transition: isTransitioning ? 'transform 0.5s ease-in-out' : 'none',
@@ -147,7 +147,7 @@ const Carousel = () => {
         onTouchEnd={onTouchEnd}
       >
         {extendedSlides.map((slide, index) => (
-          <div key={index} className="min-w-full h-[500px] relative rounded-md overflow-hidden">
+          <div key={index} className="min-w-full h-[500px] max-h-full relative rounded-md overflow-hidden">
             <img
               src={slide.image}
               alt={slide.title}

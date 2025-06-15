@@ -64,7 +64,7 @@ export default function TradingSections() {
           key={idx}
           className={`flex h-fit flex-col md:flex-row ${
             section.imageLeft ? "md:flex-row" : "md:flex-row-reverse"
-          } items-start gap-8 px-8 mx-auto`}
+          } items-start gap-8 mx-auto`}
         >
           {/* Image */}
           <motion.div

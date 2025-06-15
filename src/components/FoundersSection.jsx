@@ -17,7 +17,7 @@ export default function FoundersSection() {
     ];
   
     return (
-      <section className="bg-white px-8  py-16 w-full">
+      <section className="bg-white py-16 w-full">
         {/* Section Header */}
         <div className="w-full mx-auto mb-12">
          <SectionHeading text={'Our Team'}/>
@@ -30,7 +30,7 @@ export default function FoundersSection() {
         </div>
   
         {/* Founders */}
-        <div className="flex flex-col md:flex-row justify-center gap-12 max-w-5xl mx-auto text-left">
+        <div className="w-full flex flex-col md:flex-row justify-center gap-12 mx-auto text-left">
           {founders.map((f, i) => (
             <div key={i} className="flex flex-col items-center md:items-start text-center md:text-left">
               <img
